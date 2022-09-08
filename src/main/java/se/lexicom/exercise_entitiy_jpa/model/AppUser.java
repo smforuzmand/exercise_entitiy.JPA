@@ -1,4 +1,6 @@
-package model;
+package se.lexicom.exercise_entitiy_jpa.model;
+
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -6,19 +8,27 @@ import java.util.Objects;
 
 
 @Entity
-@Table()
 public class AppUser {
 
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int userId;
+
+    @Column(length = 100, nullable = false)
     private String userName;
+
+    @Column(length = 100, nullable = false)
     private String firstName;
+    @Column(length = 100, nullable = false)
     private String lastName;
+    @Column(nullable = false)
     private LocalDate birthDate;
-    private boolean isActive = true;
+    @Column(length = 200 ,nullable = false)
+    private boolean isActive;
+    @Column(length = 100, nullable = false)
     private String password;
+    @CreationTimestamp
     private LocalDate registrationDate;
 
 

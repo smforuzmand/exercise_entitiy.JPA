@@ -8,11 +8,11 @@
         <version>2.7.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>se.lexicom</groupId>
-    <artifactId>exercise_entitiy_JPA</artifactId>
+    <groupId>se.lexicon</groupId>
+    <artifactId>spring.boot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>exercise_entitiy.JPA</name>
-    <description>exercise_entitiy.JPA</description>
+    <name>spring.boot</name>
+    <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>17</java.version>
     </properties>
