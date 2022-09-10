@@ -24,7 +24,7 @@ public class AppUser {
     private String lastName;
     @Column(nullable = false)
     private LocalDate birthDate;
-    @Column(length = 200 ,nullable = false)
+    @Column(length = 200 ,nullable = false, columnDefinition = "bit not null default true")
     private boolean isActive;
     @Column(length = 100, nullable = false)
     private String password;
